@@ -1,0 +1,46 @@
+﻿<Window x:Class="uno.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="945">
+    <Grid Width="907">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="135*" />
+            <RowDefinition Height="121*" />
+            <RowDefinition Height="55*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="318*" />
+            <ColumnDefinition Width="206*" />
+            <ColumnDefinition Width="256*" />
+            <ColumnDefinition Width="143*" />
+        </Grid.ColumnDefinitions>
+        <Menu Name="menu1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="28,45,34,66">
+            <MenuItem Header="Archivo" HorizontalAlignment="Center" VerticalAlignment="Stretch" Foreground="#FF1CC2C4" OpacityMask="#FF4455F3" BorderBrush="{x:Null}">
+                <MenuItem Header="Nuevo" />
+                <MenuItem Header="Abrir" />
+                <MenuItem Header="Guardar" />
+                <MenuItem Header="Guardar como..." />
+                <MenuItem Header="Salir" />
+            </MenuItem>
+            <MenuItem Header="Edicion" BorderBrush="{x:Null}" OpacityMask="#FF4455F3" Foreground="#FF1DC9CB">
+                <MenuItem Header="Deshacer" />
+                <MenuItem Header="Copiar" />
+                <MenuItem Header="Cortar" />
+                <MenuItem Header="Pegar" />
+                <MenuItem Header="Eliminar" />
+                <MenuItem Header="Buscar..." />
+            </MenuItem>
+            <MenuItem Header="Formato" Foreground="#FF24D6D8" OpacityMask="#FF4455F3">
+                <MenuItem Header="Ajuste de Linea" />
+                <MenuItem Header="Fuente" />
+            </MenuItem>
+            <MenuItem Header="Ver" Foreground="#FF1FC6C8" OpacityMask="#FF4455F3">
+                <MenuItem Header="Barra de Estado" />
+            </MenuItem>
+            <MenuItem Header="Ayuda" Click="MenuItem_Click" OpacityMask="#FF4455F3" Foreground="#FF27D6D8">
+                <MenuItem Header="Ver la Ayuda" />
+                <MenuItem Header="Acerca del Bloc de Notas" />
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
